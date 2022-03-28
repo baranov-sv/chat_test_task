@@ -24,7 +24,7 @@ services:
   db:
     image: postgres:11.4-alpine
     environment:
-      POSTGRES_DB: db_development
+      POSTGRES_DB: app_development
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
     volumes:
