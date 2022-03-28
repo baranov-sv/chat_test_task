@@ -1,0 +1,4 @@
+# Docker
+/local/*
+/volumes/postgres
+.env
