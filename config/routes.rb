@@ -1,3 +1,9 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  resources :chats,  only: [:index] do
+    resources :messages, only: [:index, :create]
+  end
+
+  resources :messages,  only: [] do
+    post :read, on: :member
+  end
 end
